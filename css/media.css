@@ -1,0 +1,51 @@
+@media(min-width:768px){
+
+    /* PORTFOLIO */
+
+    .portfolio-inner:before{
+        bottom: -4%;
+    }
+    .portfolio-inner:after{
+        bottom: -5%;
+    }
+
+    /* MORE PROJECT */
+
+    .more-projects-inner .col-12:nth-child(5) .project-item img{
+        height: 300px !important;
+    }
+}
+@media(min-width:992px){
+
+    /* PORTFOLIO */
+
+    .portfolio-inner:before{
+        bottom: -11%;
+    }
+    .portfolio-inner:after{
+        bottom: -12%;
+    }
+}
+@media(min-width:1200px){
+
+    /* PORTFOLIO */
+
+    .portfolio-inner:before{
+        bottom: -16%;
+    }
+    .portfolio-inner:after{
+        bottom: -17%;
+    }
+
+    /* MORE-PROJECT */
+
+    .more-projects-inner .col-12 .project-item img{
+        height: 300px !important;
+    }
+
+    /* FOOTER */
+
+    footer .col-12:last-child .footer-items{
+        padding-left: 140px !important;
+    }
+}
