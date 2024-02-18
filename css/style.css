@@ -365,6 +365,9 @@ header nav li:hover .dropdown{
 .portfolio{
     padding-bottom: 100px;
 }
+.portfolio-title{
+    margin-bottom: 65px;
+}
 .portfolio-inner:before{
     content: '';
     width: 30%;
@@ -402,6 +405,9 @@ header nav li:hover .dropdown{
 }
 .portfolio-item img:hover{
     transform: scale(1.1);
+}
+.portfolio ul li a:focus{
+    border: 1px solid var(--theme-white);
 }
 
 /* MORE PROJECTS */
