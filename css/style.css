@@ -16,7 +16,7 @@ body{
 img{
     object-fit: cover;
 }
-.banner , .qualification ,.other-skill , .more-projects , .contact{
+.qualification ,.other-skill , .more-projects , .contact{
     padding: 120px 0;
 }
 .theme-btn ,.about-img img , .portfolio-item img , .more-projects-inner .projects-item img , .project-content , .contact-content .social-icon a i , footer .col-12:last-child .footer-items i , footer .col-12:last-child .footer-items a , .copyright ul li a , footer .col-12:nth-child(2) ul li a{
@@ -208,6 +208,9 @@ header nav li:hover .dropdown{
 
 /* BANNER */
 
+.banner{
+    padding: 60px 0 120px 0;
+}
 .dynamic-text {
     overflow: hidden;
     max-height: 100px;
@@ -465,10 +468,10 @@ footer .col-12:last-child .footer-items a:hover{
 
 .back-to-top{
     display: none;
-    width: 55px;
-    height: 55px;
+    width: 45px;
+    height: 45px;
     background-color: var(--theme-yellow);
-    line-height: 55px;
+    line-height: 45px;
     right: 20px;
     bottom: 20px;
     transition: 0.5s;

@@ -28,6 +28,12 @@
 }
 @media(min-width:1200px){
 
+    /* BANNER */
+
+    .banner{
+        padding: 80px 0 120px 0;
+    }
+
     /* PORTFOLIO */
 
     .portfolio-inner:before{
