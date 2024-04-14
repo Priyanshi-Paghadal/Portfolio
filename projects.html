@@ -14,6 +14,16 @@
 </head>
 <body>
 
+<!-- LOADER -->
+
+<div class="overlay">
+    <div class="loader"></div>
+</div>
+
+<!-- POINTER -->
+
+<div class="cursor"></div>
+
 <!-- HEADER -->
 
 <header class="navbar navbar-expand-lg border-bottom border-secondary py-3 end-0 start-0 z-1" id="top">
@@ -91,14 +101,14 @@
                 <div class="row">
                     <div class="col-6">
                         <div class="projects-item my-4">
-                            <a href="javascript:void(0)">
+                            <a href="https://661bf4f42a20328118a4b00e--zesty-sawine-265a3e.netlify.app/" target="_blank">
                                 <img src="img/html-project.png" alt="html-pr" title="html-pr" width="100%">
                             </a>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="projects-item my-4">
-                            <a href="javascript:void(0)">
+                            <a href="https://661bf462adfe0982b94afccc--beamish-faloodeh-9ef7a5.netlify.app/" target="_blank">
                                 <img src="img/css-project.png" alt="css-pr" title="css-pr" width="100%">
                             </a>
                         </div>
@@ -112,22 +122,22 @@
                     </div>
                     <div class="col-6">
                         <div class="projects-item my-4">
-                            <a href="javascript:void(0)">
+                            <a href="https://661bf0380e8b6e7d63e54a7f--loquacious-ganache-6fa459.netlify.app/" target="_blank">
                                 <img src="img/css-project-3.png" alt="css-pr" title="css-pr" width="100%">
                             </a>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="projects-item my-4">
-                            <a href="javascript:void(0)">
-                                <img src="img/css-project-4.png" alt="css-pr" title="css-pr" width="100%">
+                            <a href="https://661bf305824e4d80741f86ed--cozy-donut-c27ae2.netlify.app/" target="_blank">
+                                <img src="img/css-project-4.png" alt="css-pr" title="css-pr" width="100%" height="350px">
                             </a>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="projects-item my-4">
                             <a href="https://661b6fb8ed81fc275e03948b--tranquil-bublanina-e70d9c.netlify.app/" target="_blank">
-                                <img src="img/css-projects-5.png" alt="css-pr" title="css-pr" width="100%">
+                                <img src="img/css-projects-5.png" alt="css-pr" title="css-pr" width="100%" height="350px">
                             </a>
                         </div>
                     </div>
@@ -135,6 +145,13 @@
                         <div class="projects-item my-4">
                             <a href="https://661b715badfe0929c94afc7f--tourmaline-halva-6f1877.netlify.app/" target="_blank">
                                 <img src="img/bt-pr.PNG" alt="bt-pr" title="bt-pr" width="100%">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="projects-item my-4">
+                            <a href="https://661becc10e8b6e7abae54a35--radiant-moonbeam-c3f681.netlify.app/" target="_blank">
+                                <img src="img/bt-pr2.png" alt="bt-pr2" title="bt-pr2" width="100%" height="330px">
                             </a>
                         </div>
                     </div>
@@ -165,6 +182,50 @@
     </section>
 
 </main>
+
+<!-- BACK-TO-TOP -->
+
+<a href="#home" class="back-to-top text-center fs-3 rounded-3 position-fixed ">
+    <i class="bi bi-chevron-double-up text-dark"></i>
+</a>
+
+<script src="js/jquery-3.7.1.min.js" type="text/javascript"></script>
+<script>
+
+    // LOADER
+
+    $(window).on('load' , function(){
+        $(".overlay").fadeOut(2500);
+    });
+
+    // CURSOR
+
+    const cursor = document.querySelector('.cursor');
+
+        document.addEventListener('mousemove', e => {
+            cursor.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;")
+        })
+
+        document.addEventListener('click', () => {
+            cursor.classList.add("expand");
+
+            setTimeout(() => {
+                cursor.classList.remove("expand");
+            }, 500)
+        })
+
+        $(window).scroll(function(){
+            if($(this).scrollTop() > 50){
+                $("header").addClass("active");
+                $(".back-to-top").fadeIn(900);
+            }
+            else{
+                $("header").removeClass("active");
+                $(".back-to-top").fadeOut(900);
+            }
+        });
+
+</script>
 
 </body>
 </html>
