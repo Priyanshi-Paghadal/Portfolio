@@ -201,6 +201,13 @@ header nav li:hover .dropdown{
     z-index: -1;
     transform: translate(-50%);
 }
+.projects-item:hover img{
+    transform: scale(1.1);
+    filter: grayscale(1);
+}
+.projects-item img{
+    transition: 0.5s all;
+}
 
 /* BACK-TO-TOP */
 
