@@ -381,6 +381,10 @@ header nav li:hover .dropdown{
 .portfolio-title{
     margin-bottom: 65px;
 }
+.portfolio ul{
+    display: flex;
+    flex-wrap: wrap;
+}
 .portfolio-inner:before{
     content: '';
     width: 30%;
