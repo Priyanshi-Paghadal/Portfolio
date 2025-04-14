@@ -17,6 +17,12 @@
 }
 @media(min-width:992px){
 
+    /* ABOUT */
+
+    .about .about-img{
+        display: block !important;
+    }
+
     /* PORTFOLIO */
 
     .portfolio-inner:before{
